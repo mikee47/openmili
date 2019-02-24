@@ -9,7 +9,6 @@
 
 static uint16_t calc_crc(uint8_t *data, size_t data_length);
 static uint8_t reverse_bits(uint8_t data);
-static void demangle_packet(uint8_t *in, uint8_t *out);
 
 PL1167_nRF24::PL1167_nRF24(RF24 &radio)
 :
