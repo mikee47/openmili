@@ -6,6 +6,7 @@
  */
 
 #include "MiLightRadio.h"
+#include <string.h>
 
 #define PACKET_ID(packet) ( ((packet[1] & 0xF0)<<24) | (packet[2]<<16) | (packet[3]<<8) | (packet[7]) )
 
