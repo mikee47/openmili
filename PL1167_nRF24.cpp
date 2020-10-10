@@ -173,11 +173,7 @@ int PL1167_nRF24::receive(uint8_t channel)
 		internal_receive();
 	}
 
-	if(_received) {
-		return _packet_length;
-	} else {
-		return 0;
-	}
+	return _received ? _packet_length : 0;
 }
 
 int PL1167_nRF24::readFIFO(uint8_t data[], size_t& data_length)
