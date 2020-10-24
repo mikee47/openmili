@@ -42,7 +42,7 @@ uint8_t reverse_bits(uint8_t data)
 
 int PL1167_nRF24::open()
 {
-	if(!_radio.begin()) {
+	if(!_radio.isReady()) {
 		return -1;
 	}
 	return recalc_parameters();
